@@ -3,96 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CGFUNDS.TOP - Launching Soon</title>
+  <title>XSFinance - Company Website</title>
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      color: white;
-      background-color: black;
+      color: #fff;
+      background-color: #0a0a0a;
     }
 
-    .hero {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1603993097397-89d87a8f8b4b?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
-      background-size: cover;
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #00d8ff;
+    }
+
+    section.hero {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       text-align: center;
+      height: 70vh;
+      background: linear-gradient(to right, #1f1f1f, #121212);
+      padding: 20px;
     }
 
-    .hero h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    .section {
-      background-color: #000;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .section h2 {
-      font-size: 1.8rem;
+    .hero h2 {
+      font-size: 2rem;
       margin-bottom: 10px;
     }
 
-    .form-container {
-      max-width: 500px;
-      margin: auto;
+    .hero p {
+      font-size: 1rem;
+      max-width: 600px;
+    }
+
+    section.about,
+    section.contact {
+      padding: 40px 20px;
+      background-color: #111;
+      text-align: center;
+    }
+
+    section.about h3,
+    section.contact h3 {
+      color: #00d8ff;
     }
 
     input, textarea {
       width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      box-sizing: border-box;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px auto;
+      display: block;
       border: none;
       border-radius: 4px;
     }
 
     input[type="submit"] {
-      background-color: #444;
-      color: white;
+      background: #00d8ff;
+      color: #000;
       cursor: pointer;
     }
 
     input[type="submit"]:hover {
-      background-color: #666;
+      background: #00aacc;
     }
 
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .section h2 {
-        font-size: 1.5rem;
-      }
+    footer {
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      background-color: #0a0a0a;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-  <div class="hero">
-    <h1>Launching Soon</h1>
-  </div>
+  <header>
+    <h1>XSFinance</h1>
+  </header>
 
-  <div class="section">
-    <h2>Contact Us</h2>
-    <p>Drop us a line!</p>
-    <div class="form-container">
-      <form action="mailto:your@email.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Your message..." rows="4" required></textarea>
-        <input type="submit" value="Send" />
-      </form>
-    </div>
-  </div>
+  <section class="hero">
+    <h2>Welcome to XSFinance</h2>
+    <p>Your trusted partner in digital asset management and financial innovation. We're launching soon—stay tuned!</p>
+  </section>
+
+  <section class="about">
+    <h3>About Us</h3>
+    <p>XSFinance is a next-generation financial technology company focused on delivering secure, scalable, and smart investment solutions. Whether you're a retail investor or an institution, our platform is designed to help you succeed in the new economy.</p>
+  </section>
+
+  <section class="contact">
+    <h3>Contact Us</h3>
+    <p>Drop us a message and we’ll get back to you shortly.</p>
+    <form action="mailto:you@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <input type="submit" value="Send Message" />
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 XSFinance. All rights reserved.
+  </footer>
 
 </body>
 </html>
